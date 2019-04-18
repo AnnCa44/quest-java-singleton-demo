@@ -7,9 +7,9 @@ public class Main {
         account.signIn("Bobby");
 
         User user = account.getUser();
-        System.out.println("Hello " + user.getName());
+        System.out.printf("Hello %s!%n", user.getName());
 
-        // shop some furniture
+        // shop some furnitures
         Shopping.shop();
 
         // show basket content

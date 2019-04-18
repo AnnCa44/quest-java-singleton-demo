@@ -4,10 +4,10 @@ public class Basket {
 
         Account account = Account.getInstance();
 
-        System.out.println("Your basket:");
+        System.out.println("\nYour basket:");
         User user = account.getUser();
         for (Furniture furniture : user.getFurnitures()) {
-            System.out.println(furniture.getName() + ": " + furniture.getPrice());
+            System.out.printf("%s: %d€%n", furniture.getName(), furniture.getPrice());
         }
     }
 }
