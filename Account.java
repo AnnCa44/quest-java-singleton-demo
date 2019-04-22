@@ -12,6 +12,9 @@ public class Account {
         return instance;
     }
 
+    // private constructor to avoid new instances
+    private Account() {}
+
     // infos stored into the singleton
     private User user;
 
